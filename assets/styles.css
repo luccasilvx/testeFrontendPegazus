@@ -1,7 +1,150 @@
-body{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1, h3{
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3 {
     color: #2BC866;
+}
+p{
+    font-size: 13px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #202020;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    color: #202020;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 25px;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+}
+.nav-itens li a{
+    padding-left: 20px;
+    color: blue;
+    text-decoration: none;
+}
+.login{
+    margin-right: 2rem;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: 2px solid #2BC866;
+    border-radius: 5px;
+    color: #2BC866;
+    background-color: #fff;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #5dda4a94;
+    transition: 1s background;
+}
+.cadastro{
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2BC866;
+    cursor: pointer;
+    transition: 1s background;
+}
+.cadastro:hover{
+    background-color: #08541b;
+    transition: 1s background;
+}
+.box-pedido{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.box-pesquisar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.input-pesquisar{
+    width: 25rem;
+    height: 2rem;
+}
+.botao-rastrear{
+    width: 7rem;
+    height: 2rem;
+    background-color: #c1c1c1;
+    color: #fff;
+    cursor: pointer;
+}
+.botao-rastrear:hover{
+    background-color: #202020;
+    color: #fff;
+    transition: 1s background;
+}
+.imagem-home{
+    display: flex;
+    justify-content: center;
+}
+.title-sobre{
+    font-size: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.descricao-sobre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
+}
+.informacoes-lista{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    padding-bottom: 7rem;
+}
+.informacao-busca, .informacao-acompanhamento, .informacao-notificacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+.img-informacao-busca, .img-informacao-acompanhamento, .img-informacao-notificacoes{
+    display: flex;
+    justify-content: center;
+}
+.sobre-express{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 0 6rem 0 6rem;
+}
+.box-botao-cadastrar{
+    justify-content: center;
+    display: flex;
+    margin-top: 5rem;
+}
+.botao-cadastrar{
+    background-color: #2BC866;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

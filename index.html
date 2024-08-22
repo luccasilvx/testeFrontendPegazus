@@ -6,63 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Pacifico&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-menu">
-            <a href="#logo" class="logo"></a>
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#parceiros">Parceiros</a>
-            <a href="#ajuda">Ajuda</a>
-            <button class="botao-entrar">Entrar</button>
-            <button class="botao-cadastrar">Cadastrar</button>
-        </nav>
-    </header>
+    <header>
 
-    <section id="home" class="home-introducao">
-        <h1>Rastreie seu Pedido!</h1>
-        <form>
-            <input type="text" name="pedido" id="pedido" placeholder="Digite seu código de rastreamento">
-            <button class="botao-rastrear" type="submit">RASTREAR</button>
-        </form>
+        <nav>
+            <div class="logo">Rastreio Xpress</div>
+            <div class="links">
+                <ul class="nav-itens">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#ajuda">Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="botoes">
+                <button href="#" class="login">Entrar</button>
+                <button href="#"class="cadastro">Cadastrar</button>
+            </div>
+        </nav>
+
+    <section id="home">
+        <div class="box-pedido"><h1>Rastreie seu Pedido!</h1></div>
+        <div class="box-pesquisar">
+            <form>
+                <input type="text" name="pedido" id="pedido" placeholder="Digite seu código de rastreamento" class="input-pesquisar">
+                <button class="botao-rastrear" type="submit">RASTREAR</button>
+            </form>
+        </div>
+        
         <img src="/img/boxes.svg" class="imagem-home">
     </section>
 
     <section id="sobre" class="sobre">
-        <div class="sobre-header">
-            <header class="sobre-intro">
-                <h1>Veja como o Rastreio Express pode facilitar sua rotina</h1>
-                <p>As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística.</p>
+            <header>
+                <h1 class="title-sobre">Veja como o Rastreio Express pode facilitar sua rotina</h1>
+                <p class="descricao-sobre">As funcionalidades do Rastreio Express foram desenvolvidas para ajudar você a organizar a rotina logística.</p>
             </header>
-        </div>
         
         <div class="informacoes-lista">
-            <article class="informacao-busca">
-                <img src="/img/search.svg">
-                <h3>Busque por uma encomenda</h3>
+            <article>
+                <img src="/img/search.svg" class="img-informacao-busca">
+                <h3 class="informacao-busca">Busque por uma encomenda</h3>
                 <p>Use o Rastreio Express para encontrar suas encomendas. Basta colocar o código de rastreio no campo de buscar e aproveitar.</p>
             </article>
 
-            <article class="informacao-acompanhamento">
-                <img src="/img/phone_loc.svg">
-                <h3>Acompanhe suas encomendas</h3>
+            <article>
+                <img src="/img/phone_loc.svg" class="img-informacao-acompanhamento">
+                <h3  class="informacao-acompanhamento">Acompanhe suas encomendas</h3>
                 <p>O Rastreio Express foi desenvolvido para facilitar a visualização de suas encomendas. Nada de atualizações misteriosas e difíceis de entender.</p>
             </article>
 
-            <article class="informacao-notificacoes">
-                <img src="/img/notification_bell.svg">
-                <h3>Receba notificações</h3>
+            <article>
+                <img src="/img/notification_bell.svg" class="img-informacao-notificacoes">
+                <h3 class="informacao-notificacoes">Receba notificações</h3>
                 <p>No Rastreio Express você acompanha tudo o que acontece com a sua encomenda diretamente no seu e-mail.</p>
             </article>
-
-            <article class="sobre-express">
-                <h2>O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação.</h2>
-                <button class="botao-cadastrar">CADASTRE-SE AGORA</button>
-            </article>
         </div>
-        
+
+        <article>
+            <h2 class="sobre-express">O Rastreio Express foi desenvolvido especialmente para quem deseja usar uma ferramenta simples e objetiva, sem enrolação.</h2>
+            <div class="box-botao-cadastrar">
+                <button class="botao-cadastrar">CADASTRE-SE AGORA</button>
+            </div>
+        </article>
+
     </section>
 
     <section id="parceiros" class="parceiros">
