@@ -101,7 +101,7 @@ nav{
     font-size: 20px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 6rem;
 
 }
 .box-pesquisar{
@@ -270,4 +270,188 @@ nav{
 }
 .box-cards, h3, p{
     margin-bottom: 1rem;
+}
+.footer-rodape {
+    width: 100%;
+    background-color: #2BC866;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /*espaçamento interno*/
+    position: relative; /*lugar desejado*/
+    bottom: 0;
+    transition: background-color 1.5s;
+    margin-top: 4rem;
+}
+
+.rodape {
+    display: block; /*largura total do footer*/
+    width: 100%; 
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-rodape:hover{
+    transition: 1.5s background;
+    background-color: #1A9047;
+}
+/*telas menores que 700px*/
+@media (max-width: 700px) {
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        display: flex;
+    }
+
+    .logo {
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+
+    .nav-itens {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-itens li {
+        margin-bottom: 10px;
+    }
+    .nav-itens li a {
+        display: flex;
+        font-size: 10px;
+        flex-direction: row;
+    }
+
+    .login, .cadastro {
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .box-pedido, .box-pesquisar {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .input-pesquisar {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .botao-rastrear {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 12px;
+    }
+
+    .imagem-home{
+        display: flex;
+        height: 50%;
+        width: 50%;
+    }
+
+    .informacoes-lista {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .informacoes-lista article {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .img-informacao-busca, .img-informacao-acompanhamento, .img-informacao-notificacoes {
+        max-width: 80%;
+    }
+
+    .sobre-express {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .box-botao-cadastrar {
+        margin-top: 20px;
+    }
+
+    .botao-cadastrar {
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .box-parceiros {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .box-header-parceiros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos-parceiros {
+        padding: 0;
+        text-align: center;
+    }
+
+    .img-parceiros {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-ajuda {
+        flex-direction: column;
+        text-align: center;
+        margin: 8rem 0 8rem 0;
+    }
+
+    .img-ajuda {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .ajuda-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        padding: 0 2rem; 
+        text-align: center;
+    }
+
+    .title-ajuda {
+        font-size: 24px;
+    }
+
+    .box-cards {
+        flex-direction: column;
+        gap: 35px;
+        padding: 0;
+    }
+
+    .ajuda-card-encomenda, .ajuda-card-melhor-envio, .ajuda-card-transportadora, .ajuda-card-taxa {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ajuda-card-melhor-envio ul {
+        padding-left: 10px;
+    }
+    .section-home, .section-pesquisar, .sobre, .section-parceiros, .section-ajuda{
+        padding: 0 1rem 0 1rem;
+    }
+    .box-pedido{
+        margin-top: 6rem;
+    }
 }
