@@ -7,10 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
         <nav>
             <div class="logo">Rastreio Xpress</div>
             <div class="links">
@@ -23,9 +23,10 @@
             </div>
             <div class="botoes">
                 <button href="#" class="login">Entrar</button>
-                <button href="#"class="cadastro">Cadastrar</button>
+                <button href="#"class="cadastro">Cadastre-se</button>
             </div>
         </nav>
+    </header>
 
     <section id="home">
         <div class="box-pedido"><h1>Rastreie seu Pedido!</h1></div>
@@ -35,7 +36,7 @@
                 <button class="botao-rastrear" type="submit">RASTREAR</button>
             </form>
         </div>
-        
+
         <img src="/img/boxes.svg" class="imagem-home">
     </section>
 
@@ -74,23 +75,29 @@
 
     </section>
 
-    <section id="parceiros" class="parceiros">
-        <div class="parceiros-header">
-            <h1>A plataforma de rastreamento mais completa do mercado</h1>
-            <p>O melhor rastreio controla todos os envios postados na Azul Cargo Express e Correios.</p>
-            <p>Porém, quem faz envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
-            <img src="/img/image_green_background.svg">
+    <section id="parceiros">
+        <div class="box-parceiros">
+            <div class="box-header-parceiros">
+                <div class="textos-parceiros">
+                    <h1 class="title-parceiros">A plataforma de rastreamento mais completa do mercado</h1>
+                    <p>O melhor rastreio controla todos os envios postados na Azul Cargo Express e Correios.</p>
+                    <p>Porém, quem faz envios com etiquetas geradas na plataforma do Melhor Envio também consegue rastrear encomendas enviadas pela Jadlog, Buslog, Via Brasil e LATAM Cargo.</p>
+                </div>
+                <img src="/img/image_green_background.svg" class="img-parceiros">
+            </div>
         </div>
     </section>
 
-    <section id="ajuda" class="ajuda">
-        <header class="ajuda-header">
-            <img src="/img/need_help.svg">
-            <h1>Precisa de ajuda com algum rastreio?</h1>
-            <p>Veja o que fazer em cada um dos casos:</p>
+    <section id="ajuda">
+        <header class="box-ajuda">
+            <img src="/img/need_help.svg" class="img-ajuda">
+            <div class="ajuda-header">
+                <h1 class="title-ajuda">Precisa de ajuda com algum rastreio?</h1>
+                <p>Veja o que fazer em cada um dos casos:</p>
+            </div>
         </header>
         
-        <div class="ajuda-cards">
+        <div class="box-cards">
             <article class="ajuda-card-encomenda">
                 <h3>Estou esperando uma encomenda</h3>
                 <p>O remetente é a única pessoa que pode resolver problemas relacionados ao rastreio.</p>
@@ -100,9 +107,11 @@
             <article class="ajuda-card-melhor-envio">
                 <h3>Enviei um pacote com etiqueta do Melhor Envio</h3>
                 <p>É muito fácil encontrar ajuda. Veja só:</p>
-                <a href="#">Entre na sua Conta Melhor Envio</a>
-                <a href="#">Vá até a opção Ajuda</a>
-                <a href="#">Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</a>
+                <ul>
+                    <li>Entre na sua Conta Melhor Envio</li>
+                    <li>Vá até a opção Ajuda</li>
+                    <li>Escolha o assunto que melhor representa sua dúvida e encontre o suporte que precisa</li>
+                </ul>
             </article>
 
             <article class="ajuda-card-transportadora">

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Kanit', sans-serif;
 }
@@ -18,11 +22,17 @@ p{
 nav{
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid #202020;
-    margin-top: 10px;
+    border-bottom: 2px solid #e2e0e0;
+    padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
     color: #202020;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo{
@@ -32,12 +42,33 @@ nav{
 .nav-itens{
     list-style: none;
     display: flex;
+    font-size: 20px;
+    gap: 1.5rem;
 }
 .nav-itens li a{
     padding-left: 20px;
-    color: blue;
+    color: 004AAD;
     text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
 }
+.nav-itens li a:hover {
+    color: #1A9047;
+}
+.nav-itens li a:hover::after {
+    width: 100%; /*linha preenchida até o final*/
+}
+.nav-itens li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1A9047;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s ease; /*animação suave para preenchimento*/
+}
+
 .login{
     margin-right: 2rem;
     padding: 10px 40px;
@@ -49,8 +80,8 @@ nav{
     cursor: pointer;
 }
 .login:hover{
-    background-color: #5dda4a94;
-    transition: 1s background;
+    background-color: #5dda4a65;
+    transition: 1.5s background;
 }
 .cadastro{
     padding: 10px 40px;
@@ -58,13 +89,13 @@ nav{
     border: none;
     border-radius: 5px;
     color: #fff;
-    background-color: #2BC866;
+    background-color: #1A9047;
     cursor: pointer;
-    transition: 1s background;
+    transition: 1.5s background;
 }
 .cadastro:hover{
     background-color: #08541b;
-    transition: 1s background;
+    transition: 1.5s background;
 }
 .box-pedido{
     font-size: 20px;
@@ -80,23 +111,29 @@ nav{
 }
 .input-pesquisar{
     width: 25rem;
-    height: 2rem;
+    height: 3rem;
+    border: 2px solid #c1c1c1;
+    border-radius: 6px;
+    font-size: 13px;
 }
 .botao-rastrear{
     width: 7rem;
-    height: 2rem;
-    background-color: #c1c1c1;
+    height: 3rem;
+    background-color: #929292;
     color: #fff;
     cursor: pointer;
+    border: 2px solid #c1c1c1;
+    border-radius: 6px;
+    font-size: 11px;
 }
 .botao-rastrear:hover{
-    background-color: #202020;
+    background-color: #44414141;
     color: #fff;
-    transition: 1s background;
+    transition: 1.5s background;
 }
 .imagem-home{
-    display: flex;
-    justify-content: center;
+    display: block; /*imagem seja tratada como bloco */
+    margin: 20px auto; /*centraliza horizontalm*/
 }
 .title-sobre{
     font-size: 30px;
@@ -110,21 +147,27 @@ nav{
     justify-content: center;
     margin-bottom: 9rem;
 }
-.informacoes-lista{
+.informacoes-lista {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem 0 2rem;
-    padding-bottom: 7rem;
+    padding: 0 2rem 7rem 2rem;
 }
-.informacao-busca, .informacao-acompanhamento, .informacao-notificacoes{
+.informacoes-lista article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex: 1; /*mesma largura*/
+    padding: 1rem;
+}
+.informacao-busca, .informacao-acompanhamento, .informacao-notificacoes {
     margin-bottom: 1.3rem;
 }
-.img-informacao-busca, .img-informacao-acompanhamento, .img-informacao-notificacoes{
-    display: flex;
-    justify-content: center;
+.img-informacao-busca, .img-informacao-acompanhamento, .img-informacao-notificacoes {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 .sobre-express{
     display: flex;
@@ -147,4 +190,84 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
+}
+.botao-cadastrar:hover{
+    background-color: #1A9047;
+    transition: 1.5s background;
+    cursor: pointer;
+}
+.box-parceiros{
+    padding-top: 5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2BC866;
+    margin: 0 5rem 7rem 5rem;
+}
+.box-header-parceiros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.textos-parceiros{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem 0 5rem;
+}
+.box-header-parceiros p{
+    margin: 0.5rem 0;
+    color: #fff;
+}
+.img-parceiros{
+    width: 400px;
+    height: 400px;
+    margin-left: 2rem;
+    padding: 5rem;
+}
+.title-parceiros{
+    font-size: 30px;
+    color: #fff;
+}
+.box-ajuda{
+    display: flex;
+    justify-content: center;
+}
+.img-ajuda{
+    width: 400px;
+    height: 400px;
+}
+.ajuda-header{
+    width: 35rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /*alinha à esquerda*/
+    padding:  0 0 0 7rem;
+}
+.title-ajuda{
+    font-size: 30px;
+}
+.box-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12rem;
+    padding: 0 3rem 9rem 3rem;
+    gap: 2rem;
+}
+.ajuda-card-encomenda, .ajuda-card-melhor-envio, .ajuda-card-transportadora, .ajuda-card-taxa{
+    border: 2px solid #2BC866;
+    border-radius: 6px;
+    padding: 15px;
+}
+.ajuda-card-melhor-envio ul {
+    list-style-type: disc; /*marcador (bolinhas)*/
+    padding-left: 20px;
+}
+
+.ajuda-card-melhor-envio li {
+    margin-bottom: 10px;
+}
+.box-cards, h3, p{
+    margin-bottom: 1rem;
 }
