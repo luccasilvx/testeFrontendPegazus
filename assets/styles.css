@@ -374,6 +374,7 @@ nav{
     }
 
     .sobre-express {
+        margin: 5rem 0 5rem 0;
         font-size: 20px;
         padding: 0;
     }
@@ -410,28 +411,28 @@ nav{
     }
 
     .box-ajuda {
-        flex-direction: column;
-        text-align: center;
-        margin: 8rem 0 8rem 0;
+        margin: 7rem 0 6rem 0;
+        flex-direction: column; /* Alinha os itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Alinha o texto ao centro */
+        padding: 1rem;
     }
 
     .img-ajuda {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+        width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+        max-width: 400px; /* Limita a largura máxima da imagem para não ficar muito grande */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-bottom: 1rem;
     }
 
     .ajuda-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-        padding: 0 2rem; 
-        text-align: center;
+        width: 100%; /* Faz a div ocupar 100% da largura disponível */
+        max-width: 35rem; /* Limita a largura máxima da div */
+        padding: 0 1rem;
     }
 
     .title-ajuda {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .box-cards {
@@ -453,5 +454,10 @@ nav{
     }
     .box-pedido{
         margin-top: 10rem;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        text-align: center; 
     }
 }
