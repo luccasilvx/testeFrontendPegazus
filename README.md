@@ -106,8 +106,3 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 3.  **Abra o `index.html`:**
     Simplesmente abra o arquivo `index.html` em seu navegador web preferido. Não é necessário nenhum servidor web ou configuração adicional.
 
----
-
-## 📄 Licença
-
-Este projeto não possui um arquivo de licença explícito no repositório. Por padrão, em caso de ausência, os direitos autorais ficam reservados ao criador. Para uso ou contribuição, é recomendável entrar em contato com o autor.
